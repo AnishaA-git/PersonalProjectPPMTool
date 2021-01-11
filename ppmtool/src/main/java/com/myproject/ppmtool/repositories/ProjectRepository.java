@@ -8,9 +8,11 @@ import com.myproject.ppmtool.domain.Project;
 @Repository
 public interface ProjectRepository extends CrudRepository<Project, Long>{
 	
-	@Override
+	  /*@Override
 	default Iterable<Project> findAllById(Iterable<Long> arg0) {
 		return null;
-	}
+	}*/
+	
+	Project findByProjectIdentifier(String projectId);
 	
 }
